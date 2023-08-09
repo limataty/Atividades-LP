@@ -5,5 +5,9 @@ public class NumerosRandomicos {
 
         Integer numRandom = ThreadLocalRandom.current().nextInt(0,9);
         System.out.println(numRandom);
+
+        Double numeroRandomReal = ThreadLocalRandom.current().nextDouble(0,11);
+        System.out.println(numeroRandomReal);
+
     }
 }
