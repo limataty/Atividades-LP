@@ -1,6 +1,6 @@
 import java.util.concurrent.ThreadLocalRandom;
 
-public class QuestaoUm {
+public class Loteria {
         public static void main(String[] args) {
             int loteria = 5;
             int numTentativa = 0;
@@ -11,7 +11,7 @@ public class QuestaoUm {
                 int numeroSorteado = ThreadLocalRandom.current().nextInt(0,10);
                 numTentativa++;
 
-                System.out.println("Tentativa " + numTentativa + ": Número sorteado = " + numeroSorteado);
+                System.out.println("Número sorteado = " + numeroSorteado);
 
                 if (numeroSorteado == loteria) {
                     break;
@@ -26,5 +26,5 @@ public class QuestaoUm {
                 System.out.println("É melhor você parar de apostar e ir trabalhar");
             }
         }
-    }
+}
 
